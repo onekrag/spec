@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -110,7 +111,8 @@ header {
 .top_inner {
   display: flex;
   justify-content: space-between;
-  padding-top: 70px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .top_content {
   padding-top: 70px;
@@ -151,8 +153,8 @@ header {
   z-index: -1;
 }
 .products {
-  height: 785px;
-  padding-top: 180px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .products_title {
   font-size: 38px;
@@ -195,7 +197,8 @@ header {
   margin: 50px auto 0;
 }
 .sales {
-  min-height: 655px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #ff7300;
 }
 .sales_inner {
@@ -215,7 +218,8 @@ header {
   text-transform: uppercase;
 }
 .about {
-  height: 575px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   position: relative;
   overflow: hidden;
 }
@@ -227,7 +231,6 @@ header {
   z-index: -1;
 }
 .about_inner {
-  padding-top: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,15 +245,12 @@ header {
   letter-spacing: 10.45px;
   line-height: 43.7px;
 }
-.about_description {
-  margin-top: 20px;
-  padding-right: 50px;
-}
 .about_img {
   flex: 1 50%;
 }
 .efficiency {
-  height: 340px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #0c243e;
 }
 .efficiency_content {
@@ -261,7 +261,6 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 50%;
 }
 .efficiency_title {
   position: relative;
@@ -300,8 +299,8 @@ header {
   text-transform: uppercase;
 }
 .partners {
-  min-height: 800px;
-  padding-top: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .partners_title {
   font-size: 38px;
@@ -324,8 +323,8 @@ header {
   box-shadow: -7px -7px 20px 0px rgba(50, 50, 50, 0.35);
 }
 .callback {
-  padding-top: 120px;
-  height: 340px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #667592;
 }
 .callback_title {
@@ -356,8 +355,8 @@ button:disabled {
   opacity: 0.5;
 }
 .home_page_footer {
-  min-height: 540px;
-  padding-top: 55px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #0c243e;
   color: #ffffff;
 }
@@ -520,34 +519,28 @@ button:disabled {
   .products_link {
     margin: 20px auto;
   }
-}
-@media screen and (max-width: 720px) {
-  .callback {
-    height: 500px;
-    text-align: center;
-  }
   .callback_form {
     grid-template-columns: repeat(1, 1fr);
   }
   .callback_form input {
     padding: 20px;
   }
+}
+@media screen and (max-width: 720px) {
+  .callback {
+    text-align: center;
+  }
   .about {
-    height: 850px;
     text-align: center;
   }
   .about_content {
     flex: 1 100%;
-  }
-  .efficiency {
-    height: 630px;
   }
   .efficiency_content {
     grid-column-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
   }
   .partners {
-    min-height: 620px;
     text-align: center;
   }
   .partners_description {
@@ -591,9 +584,6 @@ button:disabled {
   .products_content {
     grid-template-columns: 1fr;
   }
-  .efficiency {
-    height: 1250px;
-  }
   .efficiency_content {
     grid-template-columns: 1fr;
   }
@@ -603,7 +593,12 @@ button:disabled {
   .footer_content {
     grid-template-columns: 1fr;
   }
-  .callback {
-    height: 550px;
+  .top_bg::after {
+    width: 90%;
+  }
+  .sales_description {
+    font-size: 24px;
+    letter-spacing: normal;
+    line-height: 24px;
   }
 }
