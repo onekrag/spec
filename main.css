@@ -122,9 +122,9 @@ header {
   justify-content: center;
   z-index: 3;
 }
-.top_title {
+/* .top_title {
   line-height: 100px;
-}
+} */
 .top_descr {
   margin-top: 20px;
   font-size: 18px;
